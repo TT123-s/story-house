@@ -1,0 +1,60 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffe8ec, #e0f7fa);
+}
+
+header {
+  background-color: #f8bbd0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #6a1b9a;
+  font-weight: bold;
+}
+
+main {
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.login-section, .category-section, .recommendation-section, .history-section, .message-section {
+  margin-bottom: 1.5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #ba68c8;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ab47bc;
+}
+
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}

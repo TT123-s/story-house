@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>魔法屋 Story House</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <header>
+    <h1>魔法屋 Story House</h1>
+  </header>
+  <main>
+    <section class="login-section">
+      <h2>登入或註冊</h2>
+      <input type="text" id="username" placeholder="帳號" />
+      <input type="password" id="password" placeholder="密碼" />
+      <button onclick="login()">登入</button>
+      <button onclick="register()">註冊</button>
+      <div id="login-message"></div>
+    </section>
+
+    <section id="main-content" class="hidden">
+      <div class="info-bar">
+        <span id="user-info"></span>
+        <span id="can-count"></span>
+      </div>
+      <section class="category-section">
+        <h2>選擇故事類別</h2>
+        <select id="category-select" onchange="selectCategory()"></select>
+        <div id="selected-category"></div>
+      </section>
+      <section class="recommendation-section">
+        <h2>今日推薦故事</h2>
+        <div id="recommendation"></div>
+      </section>
+      <section class="history-section">
+        <h2>歷史紀錄</h2>
+        <ul id="history-list"></ul>
+      </section>
+      <section class="message-section">
+        <h2>留言給我</h2>
+        <textarea id="message-input" placeholder="輸入留言..."></textarea>
+        <button onclick="sendMessage()">送出</button>
+        <div id="message-status"></div>
+      </section>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
